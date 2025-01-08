@@ -1,0 +1,67 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 50% auto; 
+}
+
+.col {
+    padding: .4em 1.3em;
+}
+
+.color-dark {
+    background: #2885C4;
+    transform: rotate(2deg);
+}
+.color-light {
+    background: #57B3F1;
+    transform: rotate(-2deg);
+}
+
+input.txt{
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+input.btn{
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    background: rgba(230, 35, 10, 0.726);
+    color: rgb(229, 239, 247); 
+    margin-bottom: 1em;
+    cursor: pointer;
+    transform:    translateX(100px) scale(1);
+    transition-property:  background-color padding;
+    transition-duration: 1s;
+
+}
+input.btnok{
+    border: 0;
+    display: block;
+    padding: 2em 4em;
+    color: rgb(209, 235, 244); 
+    margin-bottom: 1em;
+    cursor: pointer;
+    transform:   translateX(100px) scale(1.3);
+    background-color: rgb(100, 200, 100);
+    transition-property:  background-color padding;
+    transition-duration: 2s;
+}
+
+input.btnok:hover{
+    background-color: rgb(17, 150, 17);
+}
+
+
+
+
+.life-container{
+    background: #3FA0E1;
+    padding: .5em;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+

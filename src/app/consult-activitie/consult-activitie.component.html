@@ -1,0 +1,16 @@
+<p>
+  consult-activitie works!
+</p>
+
+<p>
+  Details de l'activité: ID: {{this.numAct}} description : {{this.description}}
+</p>
+
+<p>
+  <input *ngIf="!isEditing" type="submit" value="supprimer" (click)="(delete())" class="btnN">
+  <input *ngIf="!isEditing" type="submit" value="modifier" (click)="(edit())" class="btnM">
+  <input *ngIf="isEditing" type="submit" value="enregistrer" (click)="(save())" class="btnokN">
+  <input *ngIf="!isEditing" type="submit" value="retour" (click)="(back())" class="btnokN">
+</p>
+
+<input *ngIf="isEditing" class="txt" type="text" [(ngModel)]="title">

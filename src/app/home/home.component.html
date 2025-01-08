@@ -1,0 +1,28 @@
+
+<div class="container color-dark">
+    <div class="col">
+        <p>Col 1</p>
+
+    </div>
+    <div class="col">
+        <p>Ma liste d'éléments ({{nbItems}})</p>
+
+    </div>
+</div>
+
+<div class="container color-light" [@toto]="this.monTestService.objectifs.length" >
+<div class="col">
+{{btnText}}
+Test: {{test}}
+    <input type="text" class="txt" placeholder="..." [(ngModel)]="btnText"> 
+
+    <input type="submit"  (click)="ajoutItem()"  [ngClass]="getExplicitClass()" > 
+
+    <p class="sm"> premier bloc dans containeer color-light </p>
+</div>
+<div class="col" >
+<p   *ngFor="let x of this.monTestService.objectifs; let i = index " 
+        class="life-container" (click)="consultAct(i)" > {{x}} </p>
+</div>
+</div>
+    
